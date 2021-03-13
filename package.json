@@ -7,6 +7,10 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
+        "test": "jest",
+        "test:coverage": "jest --coverage",
+        "test:watch": "jest --watch",
+        "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch",
         "lint": "eslint --ignore-path .eslintignore --ext .js,.ts,.tsx .",
         "check-types": "tsc",
         "prettier": "prettier --ignore-path .prettierignore \"**/*.+(js|json)\"",
@@ -37,6 +41,9 @@
         "react-dom": "^17.0.1"
     },
     "devDependencies": {
+        "@testing-library/jest-dom": "^5.11.9",
+        "@testing-library/react": "^11.2.5",
+        "@testing-library/user-event": "^12.8.3",
         "@types/node": "^14.14.34",
         "@types/react": "^17.0.3",
         "@typescript-eslint/eslint-plugin": "^4.17.0",
